@@ -250,5 +250,8 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec bemenu-run
 
+# used to let GUI apps authorize elevated access in sway
+exec /usr/lib/polkit-1/polkitd
+
 include /etc/sway/config.d/*
 
