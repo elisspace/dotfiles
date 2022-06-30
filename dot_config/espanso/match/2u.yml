@@ -1,5 +1,5 @@
 matches:
   - trigger: ":hi"
-    replace: "Hello there :wave:, my name is Eli and I'll be assisting you today with your $$$ question. Who do I have the pleasure of speaking with?"
+    replace: "Hello there :wave:, my name is Eli and I'll be assisting you today with your AAAAA question. Who do I have the pleasure of speaking with?"
   - trigger: ":bi"
     replace: "I'll mark this question as resolved. Please don't hesitate to open a new question if you get stuck again in the future! For now, please hang in the chat to leave me a (very quick) star-rating :D Good luck with the rest of your course!"  
