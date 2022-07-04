@@ -34,6 +34,10 @@ To run:
 ### VirtualBox
 1. Disable Secure Boot before installing rpm downloaded from official site, otherwise looks like you have to manually install everything
 
+### Starship
+1. To update run `curl -sS https://starship.rs/install.sh | sh`
+2. Add `eval "$(starship init zsh))"` to end of ~/.zshrc
+
 ## Ubuntu
 
 ### Update System
