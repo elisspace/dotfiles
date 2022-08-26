@@ -213,8 +213,9 @@ bindsym $mod+r mode "resize"
 #        inactive_workspace #32323200 #32323200 #5c5c5c
 #    }
 #}
-output eDP-1 scale 1.4
-default_border pixel 2 
+output eDP-1 scale 1.4 
+# output eDP-1 scale 2 # resized rate for distance viewing
+# default_border pixel 2 
 bar {
     swaybar_command waybar
 }
@@ -238,6 +239,9 @@ bindsym Shift+Print exec grim -g "$(slurp)" -t png - | wl-copy -t image/png
 # capture the focused monitor to clipboard    
 bindsym Shift+Control+Print exec grim -o $(swaymsg -t get_outputs | jq -r '.[] | select(.focused) | .name') -t png - | wl-copy -t image/png
 
+exec swayidle \
+	timeout 600 'swaymsg "output *dpms off"' \
+	resume 'swaymsg "output * dpms on"'
 
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
