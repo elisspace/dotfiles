@@ -1,0 +1,11 @@
+matches:
+  - trigger: :ss
+    replace: |
+      My name is Eli and I'm a new joiner on the SOC/SIEM team at Reyes. We're in process of getting all the devices around the world correctly logging to QRadar. We've got a list of Windows devices that are not reporting to QRadar, and we've confirmed with IT that they don't have WinCollect installed. We're trying to find the right people to install this service for us. 
+
+      I've got your name on the list for the following devices (correlated with IP address, Business Unit, and Server Location):
+
+      THINGHERE
+
+      Are you the right person to talk to in order to get our logging service installed? If not, would you be able to point me towards the correct contact? Thanks either way!
+ 
