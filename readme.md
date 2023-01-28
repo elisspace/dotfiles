@@ -41,11 +41,12 @@ To run:
 ## Ubuntu
 
 ### Update System
-1. (Debian-based) `sudo apt-get update && sudo apt-get dist-upgrade -y`
-2. Install essential tools `sudo apt-get install build-essential curl file git`
-3. Set up zsh `sudo dnf install zsh`
+1. (Debian-based) `sudo apt update && sudo apt-get dist-upgrade -y`
+2. Install essential tools `sudo apt install build-essential curl file git`
+3. Set up zsh `sudo apt install zsh`
 	1. Install oh-my-zsh same as ubuntu
-	2. Install `sudo dnf install powerline powerline-fonts`
+	2. Install `sudo apt install powerline powerline-fonts`
+		1. On Debian it's `sudo apt install powerline` which will auto-add the `fonts-powerline` package 
 	3. Clone autosuggestions/syntax highlighting per Ubuntu instructions as well 
 
 ### Set up ufw (while still as root, otherwise add `sudo`) on servers
